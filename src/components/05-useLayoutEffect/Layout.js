@@ -1,12 +1,12 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
-import { useCouter } from '../../hooks/useCouter';
+import { useCounter } from '../../hooks/useCounter';
 
 import './layout.css';
 
 export const Layout = () => {
 
-    const { counter, increment } =  useCouter(1);
+    const { counter, increment } =  useCounter(1);
     const { data } = useFetch( `https://www.breakingbadapi.com/api/quotes/${ counter }` );
     
     const { quote } = !!data && data[0];
