@@ -5,7 +5,7 @@ export const HomeScreen = () => {
 
     const { user } = useContext(UserContext);
 
-    console.log( user );
+    // console.log( user );
 
     return (
         <div>
