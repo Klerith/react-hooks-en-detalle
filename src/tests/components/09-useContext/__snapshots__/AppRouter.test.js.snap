@@ -5,24 +5,13 @@ exports[`Pruebas en <AppRouter /> debe de mostrarse correctamente 1`] = `
   <nav
     className="navbar navbar-expand-sm navbar-dark bg-dark"
   >
-    <Link
+    <a
       className="navbar-brand"
-      to="/"
+      href="/"
+      onClick={[Function]}
     >
-      <LinkAnchor
-        className="navbar-brand"
-        href="/"
-        navigate={[Function]}
-      >
-        <a
-          className="navbar-brand"
-          href="/"
-          onClick={[Function]}
-        >
-           useContext 
-        </a>
-      </LinkAnchor>
-    </Link>
+       useContext 
+    </a>
     <div
       className="collapse navbar-collapse"
       id="navbarNavAltMarkup"
@@ -30,114 +19,31 @@ exports[`Pruebas en <AppRouter /> debe de mostrarse correctamente 1`] = `
       <div
         className="navbar-nav"
       >
-        <NavLink
-          activeClassName="active"
-          className="nav-item nav-link"
-          exact={true}
-          to="/"
+        <a
+          aria-current="page"
+          className="nav-item nav-link active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
         >
-          <Link
-            aria-current="page"
-            className="nav-item nav-link active"
-            style={Object {}}
-            to={
-              Object {
-                "hash": "",
-                "pathname": "/",
-                "search": "",
-                "state": null,
-              }
-            }
-          >
-            <LinkAnchor
-              aria-current="page"
-              className="nav-item nav-link active"
-              href="/"
-              navigate={[Function]}
-              style={Object {}}
-            >
-              <a
-                aria-current="page"
-                className="nav-item nav-link active"
-                href="/"
-                onClick={[Function]}
-                style={Object {}}
-              >
-                 Home 
-              </a>
-            </LinkAnchor>
-          </Link>
-        </NavLink>
-        <NavLink
-          activeClassName="active"
+           Home 
+        </a>
+        <a
+          aria-current={null}
           className="nav-item nav-link"
-          exact={true}
-          to="/about"
+          href="/about"
+          onClick={[Function]}
         >
-          <Link
-            aria-current={null}
-            className="nav-item nav-link"
-            to={
-              Object {
-                "hash": "",
-                "pathname": "/about",
-                "search": "",
-                "state": null,
-              }
-            }
-          >
-            <LinkAnchor
-              aria-current={null}
-              className="nav-item nav-link"
-              href="/about"
-              navigate={[Function]}
-            >
-              <a
-                aria-current={null}
-                className="nav-item nav-link"
-                href="/about"
-                onClick={[Function]}
-              >
-                 About 
-              </a>
-            </LinkAnchor>
-          </Link>
-        </NavLink>
-        <NavLink
-          activeClassName="active"
+           About 
+        </a>
+        <a
+          aria-current={null}
           className="nav-item nav-link"
-          exact={true}
-          to="/login"
+          href="/login"
+          onClick={[Function]}
         >
-          <Link
-            aria-current={null}
-            className="nav-item nav-link"
-            to={
-              Object {
-                "hash": "",
-                "pathname": "/login",
-                "search": "",
-                "state": null,
-              }
-            }
-          >
-            <LinkAnchor
-              aria-current={null}
-              className="nav-item nav-link"
-              href="/login"
-              navigate={[Function]}
-            >
-              <a
-                aria-current={null}
-                className="nav-item nav-link"
-                href="/login"
-                onClick={[Function]}
-              >
-                 Login
-              </a>
-            </LinkAnchor>
-          </Link>
-        </NavLink>
+           Login
+        </a>
       </div>
     </div>
   </nav>
